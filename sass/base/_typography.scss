@@ -1,0 +1,40 @@
+body {
+	font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-white;
+}
+
+.heading-primary {
+    color: $color-white;
+    // text-transform: uppercase;
+    backface-visibility: hidden;
+
+    &--main {
+        display: block;
+        font-size: 4rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        animation-name: moveInLeft;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+
+        @include respond(phone) {
+            letter-spacing: .1rem;
+            font-size: 3rem;
+        }
+    }
+    
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: .5rem;
+        animation: moveInRight 1s ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: .1rem;
+            font-size: 1.5rem;
+        }
+    }
+}

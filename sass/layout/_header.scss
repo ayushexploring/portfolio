@@ -1,0 +1,57 @@
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba($color-primary-light, 0.7), 
+        rgba($color-primary-dark, 0.7)), 
+    url(../img/header-photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+
+    &__logo-box {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__logo {
+        font-family: 'Sacramento', cursive;
+        font-size: $logo-size;
+        color:$color-white;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 90%;
+
+        @include respond(phone) {
+            transform: translate(-50%, -75%);
+        }
+    }
+
+    &__arrow-wrapper {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        animation-name: moveInTop;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+
+        @include respond(phone) {
+            top: 80%;
+        }
+    }
+
+    &__arrow {
+        color: $color-white;       
+        transform: scale(2);
+    }
+}
