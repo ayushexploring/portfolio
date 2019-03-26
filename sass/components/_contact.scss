@@ -5,23 +5,45 @@
             rgba($color-primary-light, .9) 50%, 
             transparent 50%),
         url(../img/header-photo.jpeg);
-        height: 50vh;
-        width: 75%;
-        border-radius: 2rem;
+    height: 25rem;
+    width: 75%;
+    border-radius: 2rem;
+    background-attachment: fixed;
 
-        &__socials {
-            padding: 3.5rem 2rem !important;
+    @include respond(phone) {
+        background-position: center;
+    }
 
-            & > *:not(:last-child) {
-                margin-bottom: 1rem;
-            }
-
-            &-link {
-
-                & i {
-                    color: $color-white;
-                }
-                
-            }
+    &__socials {
+        padding: 6.5rem !important;
+        margin-top: 3.5rem;
+        
+        @include respond(tab-land) {
+            padding: 4.5rem 4rem !important;
         }
+
+        @include respond(phone) {
+            margin-top: -3rem;
+        }
+
+        // & > *:not(:last-child) {
+        //     margin-bottom: 1rem;
+        // }
+
+        &-link {
+
+            @include respond(phone) {
+                padding: 1.55rem !important;
+            }
+
+            & i {
+                color: $color-white;
+
+                &:hover {
+                    color: $color-grey-dark;
+                }
+            }
+            
+        }
+    }
 }
