@@ -11,7 +11,7 @@
     // color: $color-white;
     border-radius: 2rem;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
         height: 90vh;
     }
 
@@ -45,13 +45,14 @@
         border-radius: 2rem;
 
         @include respond(tab-port) {
-            height: 50%;
+            height: 30%;
             width: 90%;
-            top: 65%;
+            top: 55%;
             transform: translate(-50%, -75%);
         }
 
         @include respond(phone) {
+            height: 50%;
             width: 90%;
             top: 65%;
             transform: translate(-50%, -75%);
