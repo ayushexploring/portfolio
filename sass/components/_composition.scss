@@ -1,0 +1,14 @@
+.composition {
+    &__dev {
+        height: 15rem;
+    }
+}
+
+.programmer-img {
+    width: 100%;
+
+
+    @include respond(tab-port) {
+        margin-top: 3rem;
+    }
+}
