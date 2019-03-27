@@ -9,7 +9,8 @@
     background-attachment: fixed;
     position: relative;
     // color: $color-white;
-    border-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 
     @include respond(tab-port) {
         height: 90vh;

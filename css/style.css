@@ -284,9 +284,10 @@ body {
       .contact__socials-link {
         padding: 1.55rem !important; } }
     .contact__socials-link i {
-      color: #fff; }
+      color: #fff;
+      transition: all .2s; }
       .contact__socials-link i:hover {
-        color: #424242; }
+        transform: scale(1.3); }
 
 .gradient-box {
   height: 80vh;
@@ -379,7 +380,8 @@ nav {
   background-position: center;
   background-attachment: fixed;
   position: relative;
-  border-radius: 2rem; }
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem; }
   @media only screen and (max-width: 62em) {
     .header {
       height: 90vh; } }

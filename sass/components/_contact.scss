@@ -38,9 +38,10 @@
 
             & i {
                 color: $color-white;
+                transition: all .2s;
 
                 &:hover {
-                    color: $color-grey-dark;
+                    transform: scale(1.3);
                 }
             }
             
